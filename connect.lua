@@ -1,3 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/main/spychat.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/spychat.lua"))()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/main/mainExploit.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/mainExploit.lua"))()
