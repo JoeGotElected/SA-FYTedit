@@ -3,3 +3,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTe
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/mainExploit.lua"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/infyield.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/wedontcare.lua"))()
