@@ -4,5 +4,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTe
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/infyield.lua"))()
 
-wait(25)
+wait(15)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/wedontcare.lua"))()
