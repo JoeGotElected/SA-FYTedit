@@ -6,4 +6,3 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTe
 
 wait(25)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/wedontcare.lua"))()
-s
