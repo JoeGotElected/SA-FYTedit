@@ -1,5 +1,5 @@
-while true do
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("VERSION 1.0.4", "All")
+while true do
 wait(1)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Just a friendly reminder, us 'exploiters' are here to ruin your experience!", "All")
 wait(3)
