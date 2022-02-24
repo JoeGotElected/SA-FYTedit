@@ -9,6 +9,7 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
 wait(3)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Feel free trying to fight us! We don't mind a fun fight as long as you don't mind your KDR dropping!", "All")
 wait(30)
-
-
 end
+
+if keyPressed == P
+then break
