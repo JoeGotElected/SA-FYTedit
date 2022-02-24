@@ -1,6 +1,6 @@
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("VERSION 1.0.5", "All")
+wait(15)
 while true do
-wait(1)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Just a friendly reminder, us 'exploiters' are here to ruin your experience!", "All")
 wait(3)
 game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("No need to scream 'clipped' or 'recorded' as were able to get alts with one click. Feel free to report us, whats stoppin ya?", "All")
