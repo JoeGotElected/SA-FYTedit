@@ -16,6 +16,11 @@ print("running")
     repeat until enabled == false
 end
 
+
+if p==player and msg:lower():sub(1,4)==",chatspam" then
+    enabled = false
+
+
  
 
 
