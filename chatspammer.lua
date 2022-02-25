@@ -4,7 +4,9 @@ wait(15)
 enabled = true
 
 if enabled == true
+then
 
+print("running")
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Just a friendly reminder, us 'exploiters' are here to ruin your experience!", "All")
     wait(3)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("No need to scream 'clipped' or 'recorded' as were able to get alts with one click. Feel free to report us, whats stoppin ya?", "All")
@@ -18,7 +20,4 @@ end
 
 
 
-if p==player and msg:lower():sub(1,4)=="/chatspam" then
-    enabled = false
-end
 
