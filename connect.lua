@@ -1,6 +1,6 @@
 print("Script loading... 0/4")
 wait(1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/spychat.lua"))()
+
 print("1/4")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/mainExploit.lua"))()
 print("2/4")
