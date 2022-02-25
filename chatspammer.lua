@@ -11,10 +11,10 @@ if enabled == true
     wait(3)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Keep in mind, not all exploiters are the same. We don't care what you think or how you feel.", "All")
     wait(3)
-
+    repeat until enabled == false
 end
 
-repeat until enabled == false 
+ 
 
 
 
