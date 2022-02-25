@@ -1,7 +1,7 @@
 local library = {flags = {}, windows = {}, open = true}
 
 --Services
-local game = hi
+
 local runService = game:GetService"RunService"
 local tweenService = game:GetService"TweenService"
 local textService = game:GetService"TextService"
