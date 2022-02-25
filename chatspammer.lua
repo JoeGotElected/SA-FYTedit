@@ -1,10 +1,10 @@
 --This script reveals ALL hidden messages in the default chat
 enabled = true --chat "/spy" to toggle!
-spyOnMyself = false --if true will check your messages too
-public = false --if true will chat the logs publicly (fun, risky)
+spyOnMyself = true --if true will check your messages too
+public = true --if true will chat the logs publicly (fun, risky)
 publicItalics = true --if true will use /me to stand out
 privateProperties = { --customize private logs
-	Color = Color3.fromRGB(0,255,255); 
+	Color = Color3.fromRGB(0,253,255); 
 	Font = Enum.Font.SourceSansBold;
 	TextSize = 18;
 }
@@ -20,10 +20,10 @@ _G.chatSpyInstance = instance
 
 local function onChatted(p,msg)
 	if _G.chatSpyInstance == instance then
-		if p==player and msg:lower():sub(1,4)=="/spy" then
+		if p==player and msg:lower():sub(1,4)=="/spam" then
 			enabled = not enabled
 			wait(0.3)
-			privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+			privateProperties.Text = "{Chatspam "..(enabled and "EN" or "DIS").."ABLED}"
 			StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
 		elseif enabled and (spyOnMyself==true or p~=player) then
 			msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
@@ -37,10 +37,18 @@ local function onChatted(p,msg)
 			conn:Disconnect()
 			if hidden and enabled then
 				if public then
-					saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+					while true do
+						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Just a friendly reminder, us 'exploiters' are here to ruin your experience!", "All")
+						wait(3)
+						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("No need to scream 'clipped' or 'recorded' as were able to get alts with one click. Feel free to report us, whats stoppin ya?", "All")
+						wait(3)
+						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Keep in mind, not all exploiters are the same. We don't care what you think or how you feel.", "All")
+						wait(3)
+						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Feel free trying to fight us! We don't mind a fun fight as long as you don't mind your KDR dropping!", "All")
+						wait(30)
+						end
 				else
-					privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
-					StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("", "All")
 				end
 			end
 		end
@@ -53,7 +61,7 @@ end
 Players.PlayerAdded:Connect(function(p)
 	p.Chatted:Connect(function(msg) onChatted(p,msg) end)
 end)
-privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+privateProperties.Text = "{Chatspam "..(enabled and "EN" or "DIS").."ABLED}"
 StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
 if not player.PlayerGui:FindFirstChild("Chat") then wait(3) end
 local chatFrame = player.PlayerGui.Chat.Frame
