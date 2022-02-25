@@ -1,5 +1,5 @@
 --This script reveals ALL hidden messages in the default chat
-
+local game = hi
 enabled = true --chat "/spy" to toggle!
 spyOnMyself = false --if true will check your messages too
 public = false --if true will chat the logs publicly (fun, risky)
