@@ -21,3 +21,4 @@ repeat until enabled == false
 if p==player and msg:lower():sub(1,4)=="/chatspam" then
     enabled = false
 end
+
