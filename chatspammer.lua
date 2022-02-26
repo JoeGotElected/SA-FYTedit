@@ -1,10 +1,9 @@
-print("VERSION 1.0.7", "All")
+print("VERSION 1.0.9")
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() or Players.LocalPlayer
 local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
 local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
 local chatFrame = player.PlayerGui.Chat.Frame
-print("VERSION 1.0.8", "All")
 wait(15)
 
 enabled = true
