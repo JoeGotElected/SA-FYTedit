@@ -6,9 +6,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTe
 print("2/3")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JoeGotElected/SA-FYTedit/UI/infyield.lua"))()
 print("3/3")
---
---print("4/4")
-wait(1)
 print("all code has been launched succsesfully!")
 
 
